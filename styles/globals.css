@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* hide header and footer */
+
+@media print {
+  /* forces to print all CSS etc in print preview - otherwise must manually toggle 'Print Backgrounds' in dialogue*/
+  * {
+    color-adjust: exact;
+  }
+  @page {
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.avoid-break {
+  break-inside: avoid;
+}
+
+.avoid-break-after {
+  break-after: avoid;
+}
+
+.always-break-before {
+  break-before: page;
+}
+
+/* temp coloured borders as quick visual check for break points */
+
+@layer utilities {
+  .breaks {
+    @apply border-2 border-yellow-500 sm:border-pink-400 md:border-red-500 lg:border-green-500 xl:border-blue-500 2xl:border-purple-500;
+  }
+  .break-after-always {
+    page-break-after: always;
+  }
+}
+
+.print-width {
+  @apply print:max-w-[630px];
+}
