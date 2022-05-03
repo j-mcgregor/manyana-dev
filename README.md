@@ -41,6 +41,8 @@ There are several scripts and pre-scripts:
 
 Husky is also implemented to run linting before committing and testing before pushing
 
+This template also includes the release process, using `semantic-release`. On `push` events to `main` via pull requests, the package gets triggered, generating release notes and bumping the version in `package.json`.
+
 
 ## Update Log 
 
