@@ -17,7 +17,7 @@
     "test:watch": "jest --runInBand --watchAll --forceExit --detectOpenHandles",
     "test:coverage": "yarn jest --coverage ",
     "clean": "rm -rf node_modules coverage .next yarn.lock",
-    "gz": "git-cz",
+    "cz": "git-cz",
     "prepare": "husky install && next telemetry disable"
   },
   "dependencies": {
