@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: 'Koulen';
+	src: url('/fonts/Koulen-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway-VariableFont_wght';
+	src: url('/fonts/Raleway-VariableFont_wght.ttf');
+}

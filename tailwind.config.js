@@ -101,6 +101,10 @@ module.exports = {
         '10xl': '6rem',
         '11xl': '6.5rem'
       },
+      fontFamily: {
+        Koulen: 'Koulen',
+        Raleway: 'Raleway-VariableFont_wght'
+      },
       maxHeight: {
         '1/2': '50vh',
         '1/3': '33.33vh',
